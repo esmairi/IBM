@@ -131,7 +131,7 @@ function updateMessage(input, response) {
       responseText = 'I did not understand your intent';
     }
   }
-  response.output.text = responseText;
+  response.output.text = 'responseText';
   return response;
 }
 
