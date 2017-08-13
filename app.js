@@ -88,7 +88,7 @@ function getCalculationResult(response){
   // Replace _result_ in Conversation Service response, with the actual calculated result
   var output = response.output.text[0];
   output = output.replace('_result_', result);
-  response.output.text[0] = output;
+  response.output.text[0] = 'output';
   // Return the updated response text based on the calculation
   return response;
   }
